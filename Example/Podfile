@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SteviaPod_Example' do
+  pod 'SteviaPod', :path => '../'
+
+  target 'SteviaPod_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
