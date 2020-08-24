@@ -1,0 +1,6 @@
+framework module Pods_SteviaPod_Tests {
+  umbrella header "Pods-SteviaPod_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

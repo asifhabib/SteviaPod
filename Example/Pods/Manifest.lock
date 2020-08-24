@@ -1,0 +1,16 @@
+PODS:
+  - SteviaPod (0.1.0)
+
+DEPENDENCIES:
+  - SteviaPod (from `../`)
+
+EXTERNAL SOURCES:
+  SteviaPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SteviaPod: 02e5f0e7414c95bbbc91254ac84e873c29f72b70
+
+PODFILE CHECKSUM: ec39b5d91f2e16557b499c6916a7a47209581d94
+
+COCOAPODS: 1.9.3
