@@ -26,7 +26,6 @@ public postfix func % (v: Int) -> SteviaPercentage {
     Double(v)%
 }
 
-@available(iOS 9.0, *)
 public extension UIView {
     
     /**

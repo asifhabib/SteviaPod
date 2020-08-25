@@ -9,7 +9,7 @@
 #if canImport(UIKit)
 import UIKit
 
-@available(iOS 9.0, *)
+
 public struct SteviaLayoutYAxisAnchor {
     let anchor: NSLayoutYAxisAnchor
     let constant: Double
@@ -20,7 +20,7 @@ public struct SteviaLayoutYAxisAnchor {
     }
 }
 
-@available(iOS 9.0, *)
+
 public struct SteviaLayoutXAxisAnchor {
     let anchor: NSLayoutXAxisAnchor
     let constant: Double
@@ -31,7 +31,7 @@ public struct SteviaLayoutXAxisAnchor {
     }
 }
 
-@available(iOS 9.0, *)
+
 public extension UILayoutGuide {
 
     var Top: SteviaLayoutYAxisAnchor {
@@ -67,7 +67,7 @@ public extension UILayoutGuide {
     }
 }
 
-@available(iOS 9.0, *)
+
 @discardableResult
 public func == (left: SteviaAttribute, right: SteviaLayoutYAxisAnchor) -> NSLayoutConstraint {
     
@@ -89,7 +89,7 @@ public func == (left: SteviaAttribute, right: SteviaLayoutYAxisAnchor) -> NSLayo
     return constraint
 }
 
-@available(iOS 9.0, *)
+
 @discardableResult
 public func == (left: SteviaAttribute, right: SteviaLayoutXAxisAnchor) -> NSLayoutConstraint {
     
@@ -121,25 +121,25 @@ public func == (left: SteviaAttribute, right: SteviaLayoutXAxisAnchor) -> NSLayo
 
 // SteviaLayoutYAxisAnchor
 
-@available(iOS 9.0, *)
+
 @discardableResult
 public func + (left: SteviaLayoutYAxisAnchor, right: Double) -> SteviaLayoutYAxisAnchor {
     return SteviaLayoutYAxisAnchor(anchor: left.anchor, constant: right)
 }
 
-@available(iOS 9.0, *)
+
 @discardableResult
 public func - (left: SteviaLayoutYAxisAnchor, right: Double) -> SteviaLayoutYAxisAnchor {
     return SteviaLayoutYAxisAnchor(anchor: left.anchor, constant: -right)
 }
 
-@available(iOS 9.0, *)
+
 @discardableResult
 public func + (left: SteviaLayoutXAxisAnchor, right: Double) -> SteviaLayoutXAxisAnchor {
     return SteviaLayoutXAxisAnchor(anchor: left.anchor, constant: right)
 }
 
-@available(iOS 9.0, *)
+
 @discardableResult
 public func - (left: SteviaLayoutXAxisAnchor, right: Double) -> SteviaLayoutXAxisAnchor {
     return SteviaLayoutXAxisAnchor(anchor: left.anchor, constant: -right)
@@ -147,7 +147,6 @@ public func - (left: SteviaLayoutXAxisAnchor, right: Double) -> SteviaLayoutXAxi
 
 // UILayoutSupport
 
-@available(iOS 9.0, *)
 public extension UILayoutSupport {
     
     var Top: SteviaLayoutYAxisAnchor {

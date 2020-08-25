@@ -42,7 +42,6 @@ public func ~ (left: UIView, right: Int) -> UIView {
     left ~ Double(right)
 }
 
-@available(iOS 9.0, *)
 @discardableResult
 public func ~ (left: UIView, right: SteviaPercentage) -> UIView {
     left.height(right)

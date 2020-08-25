@@ -41,7 +41,7 @@ public struct FlexibleSpace {
     }
 }
 
-@available(iOS 9.0, *)
+
 public extension UIView {
     @discardableResult
     func layout(@SteviaLayoutBuilder content: () -> [SteviaLayoutItem]) -> UIView {
@@ -52,7 +52,7 @@ public extension UIView {
     }
 }
 
-@available(iOS 9.0, *)
+
 public extension UIView {
     
     /**
