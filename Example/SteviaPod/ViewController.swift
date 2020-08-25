@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var v: LoginViewStevia!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        v = LoginViewStevia()
+        view = v
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
