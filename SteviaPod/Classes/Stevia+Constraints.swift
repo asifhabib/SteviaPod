@@ -159,5 +159,37 @@ public extension UIView {
         return self
     }
     
+    /// It will increase the Compressiong Resistance Priority on the horizontal axis.
+    func doNotCompressHorizontal(){
+        doNotCompress(for: .horizontal)
+    }
+    
+    /// It will increase the Compressiong Resistance Priority on the vertical axis.
+    func doNotCompressVertical(){
+        doNotCompress(for: .vertical)
+    }
+    
+    /// It will increase the Content Hugging Priority on the horizontal axis.
+    func doNotExpandHorizontal(){
+        doNotExpand(for: .horizontal)
+    }
+    
+    /// It will increase the Content Hugging Priority on the vertical axis.
+    func doNotExpandVertical(){
+        doNotExpand(for: .horizontal)
+    }
+    
+    /// /// It will increase the Compressiong Resistance Priority on axis.
+    /// - Parameter axis: axis on which Compressiong Resistance Priority will be increased. Possible value could be .horizontal and .horizontal
+    func doNotCompress(for axis: NSLayoutConstraint.Axis) {
+        setContentCompressionResistancePriority(.required, for: axis)
+    }
+    
+    /// It will increase the Content Hugging Priority priority on axis.
+    /// - Parameter axis: axis on which Content Hugging Priority will be increased. Possible value could be .horizontal and .horizontal
+    func doNotExpand(for axis: NSLayoutConstraint.Axis) {
+        setContentHuggingPriority(.required, for: axis)
+    }
+    
 }
 #endif
